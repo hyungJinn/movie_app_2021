@@ -1,17 +1,11 @@
-import React from "react";
-
-function Food({ favorite }) {
-  return <h1>I like {favorite}</h1>;
-}
+import Button from "./Button";
+import styles from "./App.module.css";
 
 function App() {
   return (
     <div>
-      <h1>Hello</h1>
-      <Food favorite="kimchi" />
-      <Food favorite="ramen" />
-      <Food favorite="samgiopsal" />
-      <Food favorite="chukimi" />
+      <h1 className={styles.title}>Hello!</h1>
+      <Button text={"button"} />
     </div>
   );
 }
